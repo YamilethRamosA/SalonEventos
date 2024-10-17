@@ -1,0 +1,169 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 60px); /* Ajustar altura para dejar espacio para el footer */
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #1c1c1c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #333;
+}
+
+.main-content {
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
+    padding: 20px; 
+}
+
+
+/* slider*/
+.slider {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+/*  */
+.slide {
+    min-width: 100%;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+#slide1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-button {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #2e3b4e; 
+    color: white; 
+    position: fixed; 
+    bottom: -2vh; /* Oculto inicialmente */
+    left: 0; 
+    right: 0; 
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.footer-section {
+   flex-basis :100%; /* Ajustar el tamaño de las secciones */
+   margin :5px ; /* Espaciado entre secciones */
+}
+
+.footer-section h3 {
+   color:#6AB5F1 ; /* Color del título */
+}
+
+.footer-section ul {
+   list-style :none ; /* Sin estilo de lista */
+   padding :0 ; /* Sin padding */
+}
+
+.footer-section ul li {
+   margin :5px 0 ; /* Espaciado entre los elementos de la lista */
+}
+
+.footer-section a {
+   color:white ; /* Color del enlace */
+   text-decoration:none ; /* Sin subrayado */
+}
+
+.footer-section a:hover {
+   text-decoration :underline ; /* Subrayar al pasar el mouse */
+}
+
+.newsletter input[type=email] {
+   padding :10px ; /* Espaciado interno */
+   width :calc(100% - 20px) ; /* Ancho del input */
+   margin-right :5px ; /* Margen derecho */
+   border :none ; /* Sin borde */
+   border-radius :5px ; /* Bordes redondeados */
+}
+
+.newsletter button {
+   padding :10px ; /* Espaciado interno del botón */
+   background-color :#6AB5F1 ; /* Color de fondo del botón */
+   color:white ; /* Color del texto */
+   border:none ; /* Sin borde */
+   border-radius :5px ; /* Bordes redondeados */
+   cursor:pointer ; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.newsletter button:hover {
+   background-color:#5393d3 ; /* Color de fondo al pasar el mouse */
+}
