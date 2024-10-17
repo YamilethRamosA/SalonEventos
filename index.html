@@ -1,13 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SaloncITO</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Saloncito</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <h1>hola bievenidos :3</h1>
-    
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Galería</a></li>
+                <li><a href="#">Reseñas</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+
+
+            <h2>SaloncITO</h2>
+            <p>contenido principal</p>
+
+            <div class="slider" id="slider">
+                <input type="radio" name="slides" id="slide1" checked>
+                <input type="radio" name="slides" id="slide2">
+                <input type="radio" name="slides" id="slide3">
+            
+                <div class="slides">
+                    <label for="slide1" class="slide">
+                        <img src="imagenes/15anios.jpeg" width="100px" height="100px" alt="Imagen 1">
+                    </label>
+                    <label for="slide2" class="slide">
+                        <img src="imagenes/bautizo.png" width="100px" height="100px" alt="Imagen 2">
+                    </label>
+                    <label for="slide3" class="slide">
+                        <img src="imagenes/boda.jpg" width="100px" height="100px" alt="Imagen 3">
+                    </label>
+                </div>
+            
+                <div class="navigation">
+                    <label for="slide1" class="nav-button">1</label>
+                    <label for="slide2" class="nav-button">2</label>
+                    <label for="slide3" class="nav-button">3</label>
+                </div>
+            </div>
+
+        
+
+
+
+
+        </main>
+    </div>
+
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SaloncITO</h3>
+                <p>Ubicación</p>
+                <p>Email: <a href="mailto:saloncito@itooaxaca.edu.mx">saloncito@itooaxaca.edu.mx</a></p>
+                <p>Tel: +52 951 987 45 23</p>
+            </div>
+            <div class="footer-section">
+                <h3>Servicios</h3>
+                <ul>
+                    <li>Ilustración</li>
+                </ul>
+            </div>
+
+            <div class="footer-section newsletter">
+                <h3>Únete a nuestro boletín</h3>
+                <form>
+                    <input type="email" placeholder="Tu Email" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
