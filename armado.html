@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizar</title>
+    <link rel="stylesheet" href="/CSS/armado.css">
+</head>
+<body>
+    <div class="servicios">
+        <h1>Que vas a rentar?</h1>
+        <form action="" id="formulario">
+
+            <div>
+                <label for="mesas"><p>Mesas</p></label>
+                <select name="" id="mesas">
+                    <option value="mCaoba">Mesas de Caoba</option>
+                    <option value="mCoca">Mesas de coca</option>
+                    <option value="mPlasticoL">Mesas largas</option>
+                </select>
+            </div>
+
+            <div>
+                <label><p>Manteles</p></label>
+                <p>
+                    <label for="siMan">Si</label>
+                    <input type="radio" name="manteles" id="siMan">
+
+                    <label for="noMan">No</label>
+                    <input type="radio" name="manteles" id="noMan">
+                </p>
+            </div>
+
+            <div>
+                <label for="sillas"><p>Sillas</p></label>
+                <select name="" id="sillas">
+                    <option value="sCaoba">Sillas de caoba</option>
+                    <option value="sCoca">Sillas de coca</option>
+                    <option value="sMetal">Sillas de metal</option>
+                </select>
+            </div>
+
+            <div>
+                <label><p>Centros de mesa</p></label>
+                <p>
+                    <label for="siCentr">Si</label>
+                    <input type="radio" name="centros" id="siCentr">
+
+                    <label for="noCentr">No</label>
+                    <input type="radio" name="centros" id="noCentr">
+                </p>
+            </div>
+
+            <div class="serviciosExtra">
+                <p>Servicios Extra</p>
+                <label>
+                    <input type="checkbox" name="extras" id="striperM"> Stripper Masculino
+                </label>
+                <label>
+                    <input type="checkbox" name="extras" id="stripperF"> Stripper Femenino
+                </label>
+                <label>
+                    <input type="checkbox" name="extras" id="barraL"> Barra Libre
+                </label>
+            </div>
+
+            <div>
+                <label for="finalizar"><div id="buttFin"><a href="">Finalizar</a></div></label>
+                <input type="button" name="finalizar" id="finalizar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

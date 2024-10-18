@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{}
+    .servicios{
+        height: 100vh;
+    }
+        #formulario{
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+            .serviciosExtra{
+                display: flex;
+                flex-direction: column;
+            }
+                #buttFin{
+                    padding: 2vh;
+                    width: min-content;
+                    border-radius: 20px;
+                    background: gray;
+                    a{
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
