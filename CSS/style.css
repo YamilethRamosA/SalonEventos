@@ -7,12 +7,11 @@ body, html {
 
 .container {
     display: flex;
-    height: calc(100vh - 60px); /* Ajustar altura para dejar espacio para el footer */
+    height: calc(100vh - 50px); /* Ajustar altura para dejar espacio para el footer */
 }
 
 .sidebar {
-    width: 250px;
-    height: 100vh;
+    width: 20vh;
     background-color: #1c1c1c;
     color: white;
     display: flex;
@@ -48,15 +47,14 @@ body, html {
     padding: 20px; 
 }
 
-
-/* slider*/
+/* slider */
 .slider {
-    position: absolute; /* Cambiado a absoluto para centrarlo en la pantalla */
+    position: absolute; /* Centrado en la pantalla */
     top: 25%;
-    left: 45%;
-    /*transform: translate(-50%, -50%); /* Centrar completamente */
-    width: 300px; /* Ajusta el tamaño según necesites */
-    height: 200px; /* Ajusta el tamaño según necesites */
+    left: 52%;
+    transform: translateX(-50%); /* Centrar completamente */
+    width: 500px; /* Ajusta el tamaño según necesites */
+    height: 400px; /* Ajusta el tamaño según necesites */
     overflow: hidden;
 }
 
@@ -92,12 +90,70 @@ input[type='radio'] {
     transform: translateX(-200%);
 }
 
-/* Navegación */
-.navigation {
+
+
+
+/* Botones de flecha */
+.prev, .next {
     position: absolute;
-    bottom: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.prev {
+    left: 5px;
+}
+
+.next {
+    right: 5px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* Botón Reservar */
+.btn-reserva {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Azul */
+    color: white;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px; /* Espacio entre botones de navegación y botón "Reservar" */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Ajuste para centrar el botón reservar debajo del slider */
+.reserve-container {
+    text-align: center; /* Centrar horizontalmente */
+    margin-top: 15px; /* Espaciado */
+}
+
+.reserve-button:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}
+
+/* Navegación */
+.navigation { 
+    position: relative;
+    top: -30px; /* Ajusta la posición para que se vea justo debajo del slider */
     left: 50%;
     transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
 }
 
 .nav-button {
@@ -114,16 +170,10 @@ input[type='radio'] {
     opacity: 1;
 }
 
-
-
-
+/* Footer */
 .footer {
     background-color: #2e3b4e; 
     color: white; 
-    position: fixed; 
-    bottom: -2vh; /* Oculto inicialmente */
-    left: 0; 
-    right: 0; 
 }
 
 .footer-content {
@@ -132,49 +182,50 @@ input[type='radio'] {
 }
 
 .footer-section {
-   flex-basis :100%; /* Ajustar el tamaño de las secciones */
-   margin :5px ; /* Espaciado entre secciones */
+   flex-basis: 100%; /* Ajustar el tamaño de las secciones */
+   margin: 5px; /* Espaciado entre secciones */
 }
 
 .footer-section h3 {
-   color:#6AB5F1 ; /* Color del título */
+   color: #6AB5F1; /* Color del título */
 }
 
 .footer-section ul {
-   list-style :none ; /* Sin estilo de lista */
-   padding :0 ; /* Sin padding */
+   list-style: none; /* Sin estilo de lista */
+   padding: 0; /* Sin padding */
 }
 
 .footer-section ul li {
-   margin :5px 0 ; /* Espaciado entre los elementos de la lista */
+   margin: 5px 0; /* Espaciado entre los elementos de la lista */
 }
 
 .footer-section a {
-   color:white ; /* Color del enlace */
-   text-decoration:none ; /* Sin subrayado */
+   color: white; /* Color del enlace */
+   text-decoration: none; /* Sin subrayado */
 }
 
 .footer-section a:hover {
-   text-decoration :underline ; /* Subrayar al pasar el mouse */
+   text-decoration: underline; /* Subrayar al pasar el mouse */
 }
 
+/* Newsletter */
 .newsletter input[type=email] {
-   padding :10px ; /* Espaciado interno */
-   width :calc(100% - 20px) ; /* Ancho del input */
-   margin-right :5px ; /* Margen derecho */
-   border :none ; /* Sin borde */
-   border-radius :5px ; /* Bordes redondeados */
+   padding: 10px; /* Espaciado interno */
+   width: calc(100% - 20px); /* Ancho del input */
+   margin-right: 5px; /* Margen derecho */
+   border: none; /* Sin borde */
+   border-radius: 5px; /* Bordes redondeados */
 }
 
 .newsletter button {
-   padding :10px ; /* Espaciado interno del botón */
-   background-color :#6AB5F1 ; /* Color de fondo del botón */
-   color:white ; /* Color del texto */
-   border:none ; /* Sin borde */
-   border-radius :5px ; /* Bordes redondeados */
-   cursor:pointer ; /* Cambia el cursor al pasar sobre el botón */
+   padding: 10px; /* Espaciado interno del botón */
+   background-color: #6AB5F1; /* Color de fondo del botón */
+   color: white; /* Color del texto */
+   border: none; /* Sin borde */
+   border-radius: 5px; /* Bordes redondeados */
+   cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
 
 .newsletter button:hover {
-   background-color:#5393d3 ; /* Color de fondo al pasar el mouse */
+   background-color: #5393d3; /* Color de fondo al pasar el mouse */
 }
