@@ -2,17 +2,15 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    height: 100vh;
 }
 
 .container {
     display: flex;
-    height: calc(100vh - 60px); /* Ajustar altura para dejar espacio para el footer */
+    height: calc(130vh - 60px) /* Ajustar altura para dejar espacio para el footer */
 }
 
 .sidebar {
     width: 250px;
-    height: 100vh;
     background-color: #1c1c1c;
     color: white;
     display: flex;
@@ -54,12 +52,13 @@ body, html {
 .nav-button:hover {
     opacity: 1;
 }
-
+.footer-container{
+    z-index: 999;
+}
 
 .footer {
     background-color: #2e3b4e; 
     color: white; 
-    position: fixed; 
     bottom: -2vh; /* Oculto inicialmente */
     left: 0; 
     right: 0; 
@@ -124,6 +123,9 @@ body, html {
     display: flex;
     flex-direction: column;
     height: 82vh;
+    width: 100%;
+    
+    align-items: center;
 }
     #titulo{
         align-self: center;
@@ -144,6 +146,12 @@ body, html {
             display: flex;
             flex-direction: column;
             align-items: center;
+            cursor: pointer;
+            margin: 20px;
+
+        }
+        .imgEventos :hover{
+            background-color: #e0e0e0;
         }
     #buttPersonalizar{
         background: gray;
