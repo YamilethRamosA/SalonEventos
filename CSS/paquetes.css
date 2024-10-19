@@ -138,6 +138,9 @@ body, html {
     }
     .eventos{
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
     }
         .eventos img{
             height: 30vh;
