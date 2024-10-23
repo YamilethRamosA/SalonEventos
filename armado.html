@@ -19,54 +19,83 @@
             </ul>
         </nav>
         <div class="formulario_div">
-            <h1>Que vas a rentar?</h1>
+            <h1>¿Qué vas a rentar?</h1>
             <form action="" id="formulario">
 
-                <div>
-                    <label for="mesas"><p>Mesas</p></label>
-                    <select name="" id="mesas">
+                <!-- Selección de fecha -->
+                <label for="radio1" class="titulo"><p>Seleccione la Fecha del Evento</p></label>
+                <div class="contenido">
+                    <label for="fechaEvento">Fecha del Evento</label>
+                    <input type="date" id="fechaEvento" name="fechaEvento">
+                </div>
+
+                <!-- Selección de mesas -->
+                <label for="radio2" class="titulo"><p>Seleccione el Tipo y Número de Mesas</p></label>
+                <div class="contenido">
+                    <label for="numMesas">Número de Mesas</label>
+                    <input type="number" id="numMesas" name="numMesas" min="1" max="100">
+
+                    <label for="tipoMesas">Tipo de Mesas</label>
+                    <select name="tipoMesas" id="tipoMesas">
                         <option value="mCaoba">Mesas de Caoba</option>
-                        <option value="mCoca">Mesas de coca</option>
-                        <option value="mPlasticoL">Mesas largas</option>
+                        <option value="mCoca">Mesas de Coca-Cola</option>
+                        <option value="mPlasticoL">Mesas Largas de Plástico</option>
+                        <option value="mRedonda">Mesas Redondas</option>
+                        <option value="mRectangular">Mesas Rectangulares</option>
                     </select>
                 </div>
 
-                <div>
-                    <label><p>Manteles</p></label>
-                    <p>
-                        <label for="siMan">Si</label>
-                        <input type="radio" name="manteles" id="siMan">
+                <!-- Selección de sillas -->
+                <label for="radio3" class="titulo"><p>Seleccione el Tipo y Número de Sillas</p></label>
+                <div class="contenido">
+                    <label for="numSillas">Número de Sillas</label>
+                    <input type="number" id="numSillas" name="numSillas" min="1" max="500">
 
-                        <label for="noMan">No</label>
-                        <input type="radio" name="manteles" id="noMan">
-                    </p>
-                </div>
-
-                <div>
-                    <label for="sillas"><p>Sillas</p></label>
-                    <select name="" id="sillas">
-                        <option value="sCaoba">Sillas de caoba</option>
-                        <option value="sCoca">Sillas de coca</option>
-                        <option value="sMetal">Sillas de metal</option>
+                    <label for="tipoSillas">Tipo de Sillas</label>
+                    <select name="tipoSillas" id="tipoSillas">
+                        <option value="sCaoba">Sillas de Caoba</option>
+                        <option value="sCoca">Sillas de Coca</option>
+                        <option value="sMetal">Sillas de Metal</option>
+                        <option value="sPlegables">Sillas Plegables</option>
                     </select>
                 </div>
 
-                <div>
-                    <label><p>Centros de mesa</p></label>
-                    <p>
-                        <label for="siCentr">Si</label>
-                        <input type="radio" name="centros" id="siCentr">
+                <!-- Selección de manteles -->
+                <label for="radio4" class="titulo"><p>¿Deseas Manteles?</p></label>
+                <div class="contenido">
+                    <label for="siMantel">Sí</label>
+                    <input type="radio" name="manteles" id="siMantel" value="si">
+                    <label for="noMantel">No</label>
+                    <input type="radio" name="manteles" id="noMantel" value="no">
 
-                        <label for="noCentr">No</label>
-                        <input type="radio" name="centros" id="noCentr">
-                    </p>
+                    <div id="tipoManteles">
+                        <label for="tipoMantel">Tipo de Manteles</label>
+                        <select name="tipoMantel" id="tipoMantel">
+                            <option value="algodon">Algodón</option>
+                            <option value="seda">Seda</option>
+                            <option value="poliester">Poliéster</option>
+                        </select>
+                    </div>
                 </div>
 
-                <div class="serviciosExtra">
-                    <p>Servicios Extra</p>
-                    
+                <!-- Selección de centros de mesa -->
+                <label for="radio5" class="titulo"><p>¿Cuántos Centros de Mesa?</p></label>
+                <div class="contenido">
+                    <input type="number" id="numCentros" name="numCentros" min="0" max="100">
+                    <label for="tipoCentro">Tipo de Arreglo</label>
+                    <select name="tipoCentro" id="tipoCentro">
+                        <option value="floresNaturales">Flores Naturales</option>
+                        <option value="floresArtificiales">Flores Artificiales</option>
+                        <option value="velas">Velas Decorativas</option>
+                        <option value="minimalista">Estilo Minimalista</option>
+                    </select>
+                </div>
+
+                <!-- Selección de servicios extra -->
+                <label for="radio6" class="titulo"><p>Servicios Extra</p></label>
+                <div class="contenido">
                     <label>
-                        <input type="checkbox" name="extras" id="striperM"> Stripper Masculino
+                        <input type="checkbox" name="extras" id="stripperM"> Stripper Masculino
                     </label>
                     <label>
                         <input type="checkbox" name="extras" id="stripperF"> Stripper Femenino
@@ -74,12 +103,18 @@
                     <label>
                         <input type="checkbox" name="extras" id="barraL"> Barra Libre
                     </label>
+                    <label>
+                        <input type="checkbox" name="extras" id="dj"> DJ
+                    </label>
+
                 </div>
 
-                <div>
-                    <label for="finalizar"><div id="buttFin"><a href="">Finalizar</a></div></label>
-                    <input type="button" name="finalizar" id="finalizar">
+                <!-- Finalizar -->
+                <label for="radio7" class="titulo"><p></p></label>
+                <div class="contenido">
+                    <a href="#" id="buttFin">Finalizar</a>
                 </div>
+
             </form>
         </div>
     </div>

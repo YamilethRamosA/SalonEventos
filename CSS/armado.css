@@ -6,12 +6,12 @@ body, html {
 
 .servicios {
     display: flex;
-    height: 130vh /* Ajustar altura para dejar espacio para el footer */
+    height: 210vh /* Ajustar altura para dejar espacio para el footer */
 }
 
 .sidebar {
-    width: 250px;
-    height: 97.8%;
+    width: 209.28px;
+    height: 98.6%;
     background-color: #1c1c1c;
     color: white;
     display: flex;
@@ -41,19 +41,65 @@ body, html {
             background-color: #333;
         }
     
-        .formulario_div{
-            width: 100%;
-        }       
-        #formulario {
-            padding: 20px;
-            background: white;
+                
+        .formulario_div {
+            padding: 40px;
+            background-color: #fff;
             border-radius: 10px;
-            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            width: 100%; 
-            margin: 0 auto; 
-
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 800px;
+            margin: 30px;
+            margin-left: 73px;
+            height: auto;
         }
+
+        .formulario_div h1 {
+            color: #343a40;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .formulario_div form div {
+            margin-bottom: 20px;
+        }
+
+        .formulario_div form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
+
+        .formulario_div form input[type="date"],
+        .formulario_div form input[type="number"]{
+            
+                width: 97%;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid #ddd;
+                background-color: #f9f9f9;
+                font-size: 16px;
+            
+        }
+        .formulario_div form select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            font-size: 16px;
+        }
+
+        .formulario_div form input[type="radio"],
+        .formulario_div form input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .formulario_div form p {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
 
         h1 {
             text-align: center;
