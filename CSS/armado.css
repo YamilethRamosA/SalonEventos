@@ -1,17 +1,62 @@
+* {
+    box-sizing: border-box; 
+}
 body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    height: 100vh;
 }
+
 
 .servicios {
     display: flex;
-    height: 210vh /* Ajustar altura para dejar espacio para el footer */
+    height: 215vh /* Ajustar altura para dejar espacio para el footer */
+    
+}
+
+/* empieza header */
+.main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    height: 50px;
+}
+.main-header .btn-reserva {
+    position: absolute;
+    right: 20px;
+    width: 100px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.main-header .btn-reserva:hover {
+    background-color: #6AB5F1;
+    color: white;
+}
+
+.main-header h1 {
+    font-size: 24px;
+    margin: 0;
+    color: white;
 }
 
 .sidebar {
     width: 209.28px;
-    height: 98.6%;
+    height: 100.6%;
     background-color: #1c1c1c;
     color: white;
     display: flex;
@@ -43,14 +88,16 @@ body, html {
     
                 
         .formulario_div {
+            
             padding: 40px;
             background-color: #fff;
             border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid black;
+            box-shadow: 0 10px 30px rgba(77, 77, 77, 0.1);
             width: 800px;
-            margin: 30px;
-            margin-left: 73px;
+            margin-left: 100px;
             height: auto;
+            margin-top: 60px;
         }
 
         .formulario_div h1 {
@@ -123,7 +170,7 @@ body, html {
         }
 
         #buttFin {
-            width: 100px;
+
             padding: 10px;
             margin-top: 20px;
             width: auto; 
@@ -132,10 +179,12 @@ body, html {
             color: white;
             border-radius: 5px;
             cursor: pointer;
+            margin: 0 auto;;
             transition: background-color 0.3s;
             text-decoration: none; 
             
         }
+
         #buttFin a {
             color: white;
             text-decoration: none; 
