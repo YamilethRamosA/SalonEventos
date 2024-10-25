@@ -19,71 +19,72 @@
         </nav>
 
         <main class="main-content">
-
-
             <h2>SaloncITO</h2>
             <p>contenido principal</p>
 
-            <div class="slider" id="slider">
-                <button class="prev">&lt;</button> <!-- Botón para mover hacia la izquierda -->
+            <div class="slider-bg">
                 <input type="radio" name="slides" id="slide1" checked>
                 <input type="radio" name="slides" id="slide2">
                 <input type="radio" name="slides" id="slide3">
-            
-                <div class="slides">
-                    <label for="slide1" class="slide">
-                        <img src="imagenes/15anios.jpeg" width="500px" height="300px" alt="Imagen 1">
-                    </label>
-                    <label for="slide2" class="slide">
-                        <img src="imagenes/bautizo.png" width="500px" height="300px" alt="Imagen 2">
-                    </label>
-                    <label for="slide3" class="slide">
-                        <img src="imagenes/boda.jpg" width="500px" height="300px" alt="Imagen 3">
-                    </label>
+
+                <div class="slides-bg">
+                    <div class="slide" style="background-image: url('imagenes/15anios.jpeg');">
+                        <div class="overlay">
+                            <h3>Fiestas de 15 Años</h3>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url('imagenes/bautizo.png');">
+                        <div class="overlay">
+                            <h3>Bautizos</h3>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url('imagenes/boda.jpg');">
+                        <div class="overlay">
+                            <h3>Bodas</h3>
+                        </div>
+                    </div>
                 </div>
-            
-                <button class="next">&gt;</button> <!-- Botón para mover hacia la derecha -->
-            
+
+                <!-- Botones de navegación -->
                 <div class="navigation">
-                    <label for="slide1" class="nav-button">1</label>
-                    <label for="slide2" class="nav-button">2</label>
-                    <label for="slide3" class="nav-button">3</label>
+                    <label for="slide1" class="prev">&#10094;</label>
+                    <label for="slide2" class="next">&#10095;</label>
                 </div>
-            
-                <button class="btn-reserva">Reservar</button> <!-- Botón Reservar -->
             </div>
             
-
-        
-
-
-
-
+            <section class="info-salon">
+                <h2>Sobre nuestro salón</h2>
+                <p>El SaloncITO ofrece un espacio versátil y elegante para eventos como bodas, fiestas de 15 años, bautizos y más. Contamos con iluminación, sonido y decoración de primer nivel. Nuestro equipo se encargará de cada detalle para asegurar que tu evento sea inolvidable.</p>
+                <p>Capacidad: 200 personas</p>
+                <p>Servicios adicionales: Catering, música en vivo, DJ, fotografía y más.</p>
+            </section>
         </main>
     </div>
 
-    <footer class="footer" id="footer">
+    <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
                 <h3>SaloncITO</h3>
-                <p>Ubicación</p>
-                <p>Email: <a href="mailto:saloncito@itooaxaca.edu.mx">saloncito@itooaxaca.edu.mx</a></p>
-                <p>Tel: +52 951 987 45 23</p>
+                <a href="#">Nosotros</a>
+                <a href="#">Eventos</a>
+                <a href="#">Reservaciones</a>
             </div>
             <div class="footer-section">
-                <h3>Servicios</h3>
-                <ul>
-                    <li>Ilustración</li>
-                </ul>
+                <h3>Contacto</h3>
+                <p>Calle Fiesta 456, Oaxaca</p>
+                <p>Tel: +52 951 987 45 23</p>
+                <p>Email: <a href="mailto:contacto@saloncito.com">contacto@saloncito.com</a></p>
             </div>
-
-            <div class="footer-section newsletter">
-                <h3>Únete a nuestro boletín</h3>
+            <div class="footer-section">
+                <h3>Suscríbete</h3>
                 <form>
-                    <input type="email" placeholder="Tu Email" required>
+                    <input type="email" placeholder="Tu Email">
                     <button type="submit">Enviar</button>
                 </form>
             </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; SaloncITO, Todos los derechos reservados.</p>
         </div>
     </footer>
 </body>
