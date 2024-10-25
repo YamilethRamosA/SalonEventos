@@ -150,63 +150,82 @@ body, html {
         }
 
 
-                .footer {
-                    background-color: #2e3b4e; 
-                    color: white; 
-                    bottom: -2vh; /* Oculto inicialmente */
-                    left: 0; 
-                    right: 0; 
-                }
-                
-                .footer-content {
-                    display: flex; 
-                    justify-content: space-between; 
-                }
-                
-                .footer-section {
-                   flex-basis :100%; /* Ajustar el tamaño de las secciones */
-                   margin :5px ; /* Espaciado entre secciones */
-                }
-                
-                .footer-section h3 {
-                   color:#6AB5F1 ; /* Color del título */
-                }
-                
-                .footer-section ul {
-                   list-style :none ; /* Sin estilo de lista */
-                   padding :0 ; /* Sin padding */
-                }
-                
-                .footer-section ul li {
-                   margin :5px 0 ; /* Espaciado entre los elementos de la lista */
-                }
-                
-                .footer-section a {
-                   color:white ; /* Color del enlace */
-                   text-decoration:none ; /* Sin subrayado */
-                }
-                
-                .footer-section a:hover {
-                   text-decoration :underline ; /* Subrayar al pasar el mouse */
-                }
-                
-                .newsletter input[type=email] {
-                   padding :10px ; /* Espaciado interno */
-                   width :calc(100% - 20px) ; /* Ancho del input */
-                   margin-right :5px ; /* Margen derecho */
-                   border :none ; /* Sin borde */
-                   border-radius :5px ; /* Bordes redondeados */
-                }
-                
-                .newsletter button {
-                   padding :10px ; /* Espaciado interno del botón */
-                   background-color :#6AB5F1 ; /* Color de fondo del botón */
-                   color:white ; /* Color del texto */
-                   border:none ; /* Sin borde */
-                   border-radius :5px ; /* Bordes redondeados */
-                   cursor:pointer ; /* Cambia el cursor al pasar sobre el botón */
-                }
-                
-                .newsletter button:hover {
-                   background-color:#5393d3 ; /* Color de fondo al pasar el mouse */
-                }
+ /* No tocar si tu tocar tu cambiar todas las paginas */
+.footer {
+    background-color: #2e3b4e;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.footer-section {
+    flex-basis: 30%;
+    margin: 5px;
+}
+
+.footer-section h3 {
+    color: #6AB5F1;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.newsletter input[type=email] {
+    padding: 10px;
+    width: calc(100% - 20px);
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px;
+    background-color: #6AB5F1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #5393d3;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+    font-size: 14px;
+    width: 100%;
+}
