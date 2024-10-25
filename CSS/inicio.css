@@ -2,23 +2,48 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    height: 100vh;  /* El cuerpo y el html ocupan el 100% del viewport */
-    overflow: hidden; /* Evita que aparezca scroll innecesario */
+    height: 100vh;
+    overflow: hidden;
 }
 
 .container {
     display: flex;
-    height: 100vh;  /* La barra lateral y el contenido principal ocupan el 100% de la pantalla */
+    height: 100vh;
 }
 
 .sidebar {
-    width: 20vh;
+    width: 210px;
     background-color: #1c1c1c;
     color: white;
     display: flex;
     flex-direction: column;
     padding-top: 20px;
-    height: 100vh; /* La barra lateral también ocupa toda la altura */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    transition: background 0.3s;
+    font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #333;
 }
 
 .main-content {
@@ -26,13 +51,14 @@ body, html {
     display: flex;
     flex-direction: column;
     padding: 0;
-    height: 100vh;  /* Asegura que el contenido principal ocupe toda la pantalla */
+    margin-left: 210px;
+    height: 100vh;
 }
 
 .slider-bg {
     position: relative;
     width: 100%;
-    height: 100vh;  /* Hace que el slider ocupe toda la altura de la pantalla */
+    height: 100vh;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -42,12 +68,12 @@ body, html {
 .slides-bg {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 300%;  /* Ajustado a 3 slides */
+    width: 300%;
 }
 
 .slide {
     min-width: 100%;
-    height: 100vh;  /* Hace que cada imagen del slide ocupe el 100% de la altura de la pantalla */
+    height: 100vh;
     background-size: cover;
     background-position: center;
     position: relative;
