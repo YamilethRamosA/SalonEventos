@@ -1,71 +1,232 @@
-/* Estilos Generales */
-body {
-    font-family: 'Arial', sans-serif;
+/* NOTA NO MODIFICAR: HEADER, SIDEBAR Y FOOTER */
+/* SI TU MODIFICAR TU ACTUALIZAR TODAS LAS PAGINAS */
+
+/* Inicio del estilo global */
+* {
+    box-sizing: border-box;
+}
+body, html {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-header {
-    background-color: #4CAF50;
+.container {
+    flex: 1;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
     color: white;
-    padding: 20px 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    height: 50px;
 }
 
-h1 {
-    margin: 0;
-}
-
-/* Sección de Reseñas */
-.reviews-section {
-    width: 80%;
-    margin: 20px auto;
-    padding: 20px;
+.main-header .btn-reserva {
+    position: absolute;
+    right: 20px;
+    width: 100px;
+    padding: 5px;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+    border: none;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.review {
-    border-bottom: 1px solid #ddd;
-    padding: 15px 0;
+.main-header .btn-reserva:hover {
+    background-color: #6AB5F1;
+    color: white;
 }
 
-.review:last-child {
-    border-bottom: none;
-}
-
-h3 {
+.main-header h1 {
+    font-size: 24px;
     margin: 0;
-    font-size: 1.2em;
 }
 
-.date {
-    color: #777;
-    font-size: 0.9em;
-    margin-top: 5px;
+.sidebar {
+    width: 210px;
+    background-color: #1c1c1c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    z-index: 1;
 }
 
-.rating {
-    font-size: 1.5em;
-    color: #FFD700;
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    transition: background 0.3s;
+    font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #333;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 230px;
+    padding-top: 60px;
+    width: 100%;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    clear: both;
+    flex-shrink: 0;
+    z-index: 10;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.footer-section {
+    flex-basis: 30%;
+    margin: 5px;
+}
+
+.footer-section h3 {
+    color: #6AB5F1;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
     margin: 5px 0;
 }
 
-.comment {
-    margin-top: 10px;
-    font-size: 1em;
-    line-height: 1.5;
+.footer-section a {
+    color: white;
+    text-decoration: none;
 }
 
-/* Sección de Formulario */
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.newsletter input[type=email] {
+    padding: 10px;
+    width: calc(100% - 20px);
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px;
+    background-color: #6AB5F1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #5393d3;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+    font-size: 14px;
+    width: 100%;
+}
+
+/* Fin del footer */
+
+/* Inicio de las reseñas */
+.review {
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    max-width: 60%;
+}
+
+.review:nth-child(1) {
+    background-color: #6AB5F1;
+}
+
+.review:nth-child(2) {
+    background-color: #FFD700;
+}
+
+.review:nth-child(3) {
+    background-color: #4CAF50;
+}
+
+.reviews-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+/* Fin de las reseñas */
+
+/* Inicio del formulario de reseñas */
 .comment-form-section {
-    width: 80%;
+    width: 60%;
     margin: 20px auto;
     padding: 20px;
     background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .comment-form {
@@ -104,16 +265,4 @@ h3 {
 .comment-form button:hover {
     background-color: #45a049;
 }
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-}
-
-footer p {
-    margin: 0;
-}
+/* Fin del formulario de reseñas */
