@@ -1,0 +1,537 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eaeff7;
+    height: 100vh;
+}
+
+
+
+
+.header {
+    background-color: rgb(68, 139, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    border: 5px solid rgb(43, 164, 212);
+    position: sticky;
+    top: 0;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    z-index: 999;
+}
+
+.titulo{
+    width: 100%;
+    height: 100%;
+}
+
+.section {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.section_one {
+    position: relative;
+    background-color: #b2e2f2;
+    color: #71b1c6;
+    height: 60vh;
+    width: 100%;
+}
+
+
+.titulo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.texto-centrado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px; 
+    color: white; 
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    white-space: nowrap;
+    letter-spacing: -2px;
+}
+
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+}
+
+
+
+.nav-list a:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+
+/* Contenedor general para organizar las cajas */
+.layout-contenedor {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+/* Barra lateral */
+/* Estilos para el aside */
+aside {
+    width: 20%;
+    background-color: #4b4eaa; /* Color de fondo similar al de la imagen */
+    padding: 20px 0px 20px 35px;    ;
+    height: 100vh;
+    color: white;
+}
+
+aside h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Estilos para la lista de navegación */
+aside nav ul {
+    list-style-type: none;
+    padding: 0;
+    height: 100%;
+    padding-top:20px ;
+    
+    
+}
+
+/* Estilos para cada elemento de la lista */
+aside nav ul li {
+    margin: 35px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 60px 0 0 60px;    
+}
+
+/*
+aside nav{
+    height: 80%;
+
+}
+*/
+
+/* Estilo para los enlaces */
+aside nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/* Estilo para los iconos (imagenes PNG) */
+.icono{
+    width: 40px; 
+    height: 40px;
+    object-fit: cover; 
+    display: block;
+    margin-right: 25px;
+    margin-left: 50px;
+    
+}
+
+/* Notificación */
+.notificacion {
+    background-color: #ff5b5b;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+    right: 10px;
+    top: 20px;
+    margin-left: 30px;
+}
+
+
+
+/* Hover para toda la lista */
+aside nav ul li:hover {
+    background-color: #eaeff7;; 
+    color: black;
+}
+
+aside nav ul li a:hover {
+    color: black;
+}
+
+
+aside nav li:hover span.arriba {
+    display: inline-block;
+}
+
+aside nav li:hover span.abajo{
+    display: inline-block;
+}
+
+
+/* Contenedor que coloca los elementos en la parte superior */
+aside nav li span.arriba {
+    position: absolute;
+    width: 30px; 
+    height: 30px; 
+    margin-bottom: 20px; 
+    top: -30px;
+    right: 0px;
+    display: none;
+}
+
+
+/* Cuadro verde */
+aside nav li span.cuadro {
+    width: 30px;
+    height: 30px;
+    background-color: #eaeff7; 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* Círculo azul con borde redondeado */
+aside nav li span.circulo {
+    width: 30px;
+    height: 30px;
+    background-color: #4b4eaa; 
+    border-radius: 0px 0px 60px 0px; 
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1; 
+}
+
+/* Contenedor que coloca los elementos en la parte superior */
+aside nav li span.abajo{
+    position: absolute;
+    width: 30px; 
+    height: 30px; 
+    margin-bottom: 20px; 
+    bottom:-50px;
+    right: 0px;
+    display: none;
+}
+
+
+/* Cuadro verde */
+aside nav li span.cuadro-abajo {
+    width: 30px;
+    height: 30px;
+    background-color: #eaeff7;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* Círculo azul con borde redondeado */
+aside nav li span.circulo-abajo {
+    width: 30px;
+    height: 30px;
+    background-color: #4b4eaa; 
+    border-radius: 0px 60px 0px 0px; 
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1; 
+}
+
+
+.decoracion img {
+    width: 100%;
+}
+
+
+
+
+
+/* 1. Centrar el contenedor de imágenes y establecer su ancho al 70% */
+.contenedor-principal {
+    width: 80%; 
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+/* 2. Configurar el contenedor de imágenes al 70% y centrarlo */
+.contenedor-imagenes {
+    width: 70%; /* Tamaño del 70% del contenedor principal */
+    height: 90vh;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    /*box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background-color: #fff;
+    */
+    padding: 60px 0 20px 0; 
+    box-sizing: border-box;
+}
+
+/* 3. Configurar las slides al 100% del contenedor de imágenes y organizar horizontalmente */
+.slides {
+    height: 85%;
+    width: 100%; 
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    margin-bottom: 20px;   
+}
+
+ /*4. Asegurar que cada slide ocupe el 100% del contenedor de slides */
+ .slide {
+    min-width: 100%; 
+    height: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* 5. Asegurar que las imágenes ocupen todo el espacio del contenedor de slides */
+.slide img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+   display: block;
+   border-radius: 10px;
+}
+
+/* 6. Posicionar los inputs de radio (ocultos) */
+.contenedor-imagenes input[type="radio"] {
+    display: none; 
+}
+
+/* 7. Navegación Dots para controlar las slides */
+.navigation {
+    display: flex;
+    gap: 10px;
+    justify-content: center; 
+    margin-bottom: 20px; 
+}
+
+.nav-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(183, 18, 18, 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-dot:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: scale(1.1); 
+    box-shadow: 0 0 5px rgba(0,0,0,0.3); 
+}
+
+/* Dots Activos */
+#slide1:checked ~ .navigation #dot1,
+#slide2:checked ~ .navigation #dot2,
+#slide3:checked ~ .navigation #dot3,
+#slide4:checked ~ .navigation #dot4 {
+    background-color: rgba(227, 223, 223, 0.9); 
+    box-shadow: 0 0 5px rgba(0,0,0,0.5); 
+}
+
+/* Dots Activos */
+#slide1:checked ~ .slides {
+    transform: translateX(0%);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+
+#slide4:checked ~ .slides {
+    transform: translateX(-300%);
+}
+
+#slide1:checked ~ .navigation #dot1,
+#slide2:checked ~ .navigation #dot2,
+#slide3:checked ~ .navigation #dot3,
+#slide4:checked ~ .navigation #dot4 {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* 8. Botón Reservar debajo de la navegación */
+.btn-reserva {
+    width: 20%; 
+    height: 50px;
+    padding: 10px 20px;
+    background-color: #6AB5F1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-reserva:hover {
+    background-color: #5393d3;
+}
+
+/* 9. Responsividad */
+@media (max-width: 768px) {
+    .contenedor-imagenes {
+        width: 90%; /* Ajusta el ancho en pantallas medianas */
+        padding: 15px;
+    }
+
+    .slides {
+        width: calc(100% * 4); /* Mantiene la anchura total */
+    }
+
+    .nav-dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .btn-reserva {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor-imagenes {
+        width: 100%; /* Ocupa todo el ancho en dispositivos móviles */
+        padding: 10px;
+    }
+
+    .slides {
+        width: calc(100% * 4); /* Mantiene la anchura total */
+    }
+
+    .nav-dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .btn-reserva {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.footer {
+    background-color: #2e3b4e; 
+    color: white; 
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.footer-section {
+   flex-basis: 100%; /* Ajustar el tamaño de las secciones */
+   margin: 5px; /* Espaciado entre secciones */
+}
+
+.footer-section h3 {
+   color: #6AB5F1; /* Color del título */
+}
+
+.footer-section ul {
+   list-style: none; /* Sin estilo de lista */
+   padding: 0; /* Sin padding */
+}
+
+.footer-section ul li {
+   margin: 5px 0; /* Espaciado entre los elementos de la lista */
+}
+
+.footer-section a {
+   color: white; /* Color del enlace */
+   text-decoration: none; /* Sin subrayado */
+}
+
+.footer-section a:hover {
+   text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+/* Newsletter */
+.newsletter input[type=email] {
+   padding: 10px; /* Espaciado interno */
+   width: calc(100% - 20px); /* Ancho del input */
+   margin-right: 5px; /* Margen derecho */
+   border: none; /* Sin borde */
+   border-radius: 5px; /* Bordes redondeados */
+}
+
+.newsletter button {
+   padding: 10px; /* Espaciado interno del botón */
+   background-color: #6AB5F1; /* Color de fondo del botón */
+   color: white; /* Color del texto */
+   border: none; /* Sin borde */
+   border-radius: 5px; /* Bordes redondeados */
+   cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.newsletter button:hover {
+   background-color: #5393d3; /* Color de fondo al pasar el mouse */
+}

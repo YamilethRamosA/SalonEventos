@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizar</title>
+    <link rel="stylesheet" href="/CSS/armado.css">
+</head>
+<body>
+    <div class="servicios">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Galería</a></li>
+                <li><a href="#">Reseñas</a></li>
+                <li><a href="/paquetes.html">Paquetes</a></li>
+
+            </ul>
+        </nav>
+        <div class="formulario_div">
+            <h1>Que vas a rentar?</h1>
+            <form action="" id="formulario">
+
+                <div>
+                    <label for="mesas"><p>Mesas</p></label>
+                    <select name="" id="mesas">
+                        <option value="mCaoba">Mesas de Caoba</option>
+                        <option value="mCoca">Mesas de coca</option>
+                        <option value="mPlasticoL">Mesas largas</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label><p>Manteles</p></label>
+                    <p>
+                        <label for="siMan">Si</label>
+                        <input type="radio" name="manteles" id="siMan">
+
+                        <label for="noMan">No</label>
+                        <input type="radio" name="manteles" id="noMan">
+                    </p>
+                </div>
+
+                <div>
+                    <label for="sillas"><p>Sillas</p></label>
+                    <select name="" id="sillas">
+                        <option value="sCaoba">Sillas de caoba</option>
+                        <option value="sCoca">Sillas de coca</option>
+                        <option value="sMetal">Sillas de metal</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label><p>Centros de mesa</p></label>
+                    <p>
+                        <label for="siCentr">Si</label>
+                        <input type="radio" name="centros" id="siCentr">
+
+                        <label for="noCentr">No</label>
+                        <input type="radio" name="centros" id="noCentr">
+                    </p>
+                </div>
+
+                <div class="serviciosExtra">
+                    <p>Servicios Extra</p>
+                    <label>
+                        <input type="checkbox" name="extras" id="striperM"> Stripper Masculino
+                    </label>
+                    <label>
+                        <input type="checkbox" name="extras" id="stripperF"> Stripper Femenino
+                    </label>
+                    <label>
+                        <input type="checkbox" name="extras" id="barraL"> Barra Libre
+                    </label>
+                </div>
+
+                <div>
+                    <label for="finalizar"><div id="buttFin"><a href="">Finalizar</a></div></label>
+                    <input type="button" name="finalizar" id="finalizar">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SaloncITO</h3>
+                <p>Ubicación</p>
+                <p>Email: <a href="mailto:saloncito@itooaxaca.edu.mx">saloncito@itooaxaca.edu.mx</a></p>
+                <p>Tel: +52 951 987 45 23</p>
+            </div>
+            <div class="footer-section">
+                <h3>Servicios</h3>
+                <ul>
+                    <li>Ilustración</li>
+                </ul>
+            </div>
+
+            <div class="footer-section newsletter">
+                <h3>Únete a nuestro boletín</h3>
+                <form>
+                    <input type="email" placeholder="Tu Email" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <section class="section section_one">
+        <img src="img/evento2.jpg" class="titulo" alt="Imagen 1">
+        <div class="texto-centrado"> SalonCITO </div>
+    </section>
+
+    <header class="header">
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Galería</a></li>
+                <li><a href="#">Reseñas</a></li>
+                <li><a href="/paquetes.html">Paquetes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="layout-contenedor">
+
+        <!-- Contenedor lateral -->
+        <aside>
+            <h1>Success</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <span class="arriba">
+                            <span class="circulo"></span>
+                            <span class="cuadro"></span>
+                        </span>
+                        <span class="abajo">
+                            <span class="circulo-abajo"></span>
+                            <span class="cuadro-abajo"></span>
+                        </span>
+                        <a href="#">
+                            <img src="img/usuario.png" alt="Icono Perfil" class="icono">
+                                Inicio
+                        </a>
+                    </li>
+
+                    <li>
+                        <span class="arriba">
+                            <span class="circulo"></span>
+                            <span class="cuadro"></span>
+                        </span>
+                        <span class="abajo">
+                            <span class="circulo-abajo"></span>
+                            <span class="cuadro-abajo"></span>
+                        </span>
+                        <a href="#">
+                            <img src="img/deberes.png" alt="Icono Perfil" class="icono">
+                                Eventos
+                            <span class="notificacion">3</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <span class="arriba">
+                            <span class="circulo"></span>
+                            <span class="cuadro"></span>
+                        </span>
+                        <span class="abajo">
+                            <span class="circulo-abajo"></span>
+                            <span class="cuadro-abajo"></span>
+                        </span>
+                        <a href="#">
+                            <img src="img/comprobacion.png" alt="Icono Perfil" class="icono">
+                            Galería
+                            <span class="notificacion">3</span>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="arriba">
+                            <span class="circulo"></span>
+                            <span class="cuadro"></span>
+                        </span>
+                        <span class="abajo">
+                            <span class="circulo-abajo"></span>
+                            <span class="cuadro-abajo"></span>
+                        </span>
+                        <a href="#">
+                            <img src="img/evento.png" alt="Icono Perfil" class="icono">
+                            Reseñas
+                            <span class="notificacion">3</span>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="arriba">
+                            <span class="circulo"></span>
+                            <span class="cuadro"></span>
+                        </span>
+                        <span class="abajo">
+                            <span class="circulo-abajo"></span>
+                            <span class="cuadro-abajo"></span>
+                        </span>
+                        <a href="/paquetes.html">
+                            <img src="img/logro.png" alt="Icono Perfil" class="icono">
+                            Paquetes
+                            <span class="notificacion">3</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </aside>
+        
+
+        <!-- Contenedor principal -->
+        <div class="contenedor-principal">
+
+            <div class="contenedor-imagenes" id="slider">
+
+
+                <!-- Inputs de radio para controlar las slides (colocados al inicio) -->
+                <input type="radio" name="slides" id="slide1" checked>
+                <input type="radio" name="slides" id="slide2">
+                <input type="radio" name="slides" id="slide3">
+                <input type="radio" name="slides" id="slide4">
+
+                <!-- Contenedor de las slides -->
+                <div class="slides">
+                    
+                    <div class="slide">
+                        <img src="img/15anios.jpeg" alt="Imagen 1">
+                    </div>
+                    <div class="slide">
+                        <img src="img/bautizo.png" alt="Imagen 2">
+                    </div>
+                    <div class="slide">
+                        <img src="img/boda.jpg" alt="Imagen 3">
+                    </div>
+                    <div class="slide">
+                        <img src="img/evento4.jpg" alt="Imagen 4">
+                    </div>
+                    
+                </div>
+
+                <!-- Controles de navegación -->
+                <div class="navigation">
+                    <label for="slide1" class="nav-dot" id="dot1"></label>
+                    <label for="slide2" class="nav-dot" id="dot2"></label>
+                    <label for="slide3" class="nav-dot" id="dot3"></label>
+                    <label for="slide4" class="nav-dot" id="dot4"></label>
+                </div>
+
+                <!-- Botón Reservar -->
+                <button class="btn-reserva">Reservar</button>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SaloncITO</h3>
+                <p>Ubicación</p>
+                <p>Email: <a href="mailto:saloncito@itooaxaca.edu.mx">saloncito@itooaxaca.edu.mx</a></p>
+                <p>Tel: +52 951 987 45 23</p>
+            </div>
+            <div class="footer-section">
+                <h3>Servicios</h3>
+                <ul>
+                    <li>Ilustración</li>
+                </ul>
+            </div>
+
+            <div class="footer-section newsletter">
+                <h3>Únete a nuestro boletín</h3>
+                <form>
+                    <input type="email" placeholder="Tu Email" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
