@@ -22,13 +22,68 @@
             <p id="titulo">PAQUETES</p>
             <p id="pregunta">Cual es tu evento?</p>
             <div class="eventos">
-                <a href="" class="imgEventos"><img src="/imagenes/15anios.jpeg" alt="imgXV"><p>XV Anios</p></a>
-                <a href="" class="imgEventos"><img src="/imagenes/bautizo.png" alt="imgBaut"><p>Bautizo</p></a>
-                <a href="" class="imgEventos"><img src="/imagenes/boda.jpg" alt="imgBoda"><p>Boda</p></a>
-                <a href="" class="imgEventos"><img src="imagenes/cumpleanios.jpeg" alt="imgCumlpeanios"><p>Cumpleanios</p></a>
-                <a href="" class="imgEventos"><img src="imagenes/despedida.jpeg" alt="imgDespedida"><p>Despedida de Solter@</p></a>
-                <a href="" class="imgEventos"><img src="imagenes/graduacion.jpeg" alt="imgGraduacion"><p>Graduacion</p></a>
+                <div class="imgEventos" data-event="xv">
+                    <img src="/imagenes/15anios.jpeg" alt="imgXV">
+                    <p>XV Años</p>
+                </div>
+                <div class="imgEventos" data-event="bautizo">
+                    <img src="/imagenes/bautizo.png" alt="imgBaut">
+                    <p>Bautizo</p>
+                </div>
+                <div class="imgEventos" data-event="boda">
+                    <img src="/imagenes/boda.jpg" alt="imgBoda">
+                    <p>Boda</p>
+                </div>
+                <div class="imgEventos" data-event="cumpleanos">
+                    <img src="imagenes/cumpleanios.jpeg" alt="imgCumlpeanios">
+                    <p>Cumpleaños</p>
+                </div>
+                <div class="imgEventos" data-event="despedida">
+                    <img src="imagenes/despedida.jpeg" alt="imgDespedida">
+                    <p>Despedida de Solter@</p>
+                </div>
+                <div class="imgEventos" data-event="graduacion">
+                    <img src="imagenes/graduacion.jpeg" alt="imgGraduacion">
+                    <p>Graduacion</p>
+                </div>
             </div>
+
+            <!-- Modal -->
+            <div class="modal" id="eventModal">
+                <div class="modal-content">
+                    <div class="modal-option">
+                        <img src="" alt="Paquete Básico">
+                        <h3>Paquete Básico</h3>
+                        <ul>
+                            <li>Sillas de metal</li>
+                            <li>Mesas para 5 personas</li>
+                            <li>Decoración básica</li>
+                            <!-- <li>Mobiliario incluido</li> -->
+                        </ul>
+                    </div>
+                    <div class="modal-option">
+                        <img src="" alt="Paquete Estándar">
+                        <h3>Paquete Estándar</h3>
+                        <ul>
+                            <li>Sillas de plastico comodas</li>
+                            <li>Mesas para 10 personas</li>
+                            <li>Centros de mesa</li>
+                            <li>Vajilla de plastico</li>
+                        </ul>
+                    </div>
+                    <div class="modal-option">
+                        <img src="" alt="Paquete Premium">
+                        <h3>Paquete Premium</h3>
+                        <ul>
+                            <li>Sillas acolchadas</li>
+                            <li>Mesas circulares para 15 personas</li>
+                            <li>Decoración premium</li>
+                            <li>Vajilla fina</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
             <div id="buttPersonalizar">
                 <a href="/armado.html">Personalizar</a>
             </div>
@@ -60,5 +115,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/paquetes.js"></script>
 </body>
 </html>
