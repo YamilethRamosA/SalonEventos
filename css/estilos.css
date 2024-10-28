@@ -14,12 +14,12 @@ body {
 
 
 .header {
-    background-color: rgb(68, 139, 233);
+    background-color:#E6E6FA;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 80px;
-    border: 5px solid rgb(43, 164, 212);
+    border: 5px solid #C8A2C8;
     position: sticky;
     top: 0;
     font-size: 20px;
@@ -112,7 +112,7 @@ body {
 /* Estilos para el aside */
 aside {
     width: 20%;
-    background-color: #4b4eaa; /* Color de fondo similar al de la imagen */
+    background-color: #C3A6FF; /* Color de fondo similar al de la imagen */
     padding: 20px 0px 20px 35px;    ;
     height: 100vh;
     color: white;
@@ -178,7 +178,7 @@ aside nav ul li a {
 
 /* Notificación */
 .notificacion {
-    background-color: #ff5b5b;
+    background-color: #A7C7E7;
     color: white;
     border-radius: 50%;
     padding: 5px 10px;
@@ -236,7 +236,7 @@ aside nav li span.cuadro {
 aside nav li span.circulo {
     width: 30px;
     height: 30px;
-    background-color: #4b4eaa; 
+    background-color: #C3A6FF; 
     border-radius: 0px 0px 60px 0px; 
     position: absolute;
     bottom: 0px;
@@ -260,7 +260,7 @@ aside nav li span.abajo{
 aside nav li span.cuadro-abajo {
     width: 30px;
     height: 30px;
-    background-color: #eaeff7;
+    background-color: #FFF5E1;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -270,7 +270,7 @@ aside nav li span.cuadro-abajo {
 aside nav li span.circulo-abajo {
     width: 30px;
     height: 30px;
-    background-color: #4b4eaa; 
+    background-color: #C3A6FF; 
     border-radius: 0px 60px 0px 0px; 
     position: absolute;
     bottom: 0px;
@@ -360,7 +360,7 @@ aside nav li span.circulo-abajo {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: rgba(183, 18, 18, 0.6);
+    background-color: #C0C0C0;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -409,7 +409,7 @@ aside nav li span.circulo-abajo {
     width: 20%; 
     height: 50px;
     padding: 10px 20px;
-    background-color: #6AB5F1;
+    background-color:#FFC1CC;
     color: white;
     border: none;
     border-radius: 5px;
@@ -478,7 +478,7 @@ aside nav li span.circulo-abajo {
 
 /* Footer */
 .footer {
-    background-color: #2e3b4e; 
+    background-color: #6C809A; 
     color: white; 
 }
 
